@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中国商业运载火箭行业深度研究报告 | 远景能源 2026.04</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Noto+Serif+SC:wght@400;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0c10;--surface:#12151c;--surface2:#1a1e28;--border:#252a36;--text:#e8eaf0;--text2:#9da3b4;--text3:#636980;--accent:#f97316;--accent2:#fb923c;--accent-dim:rgba(249,115,22,.12);--green:#22c55e;--red:#ef4444;--blue:#3b82f6;--purple:#a855f7;--cyan:#06b6d4}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Noto Sans SC',sans-serif;font-weight:400;line-height:1.8;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent);color:#000}
+.container{max-width:1200px;margin:0 auto;padding:0 32px}
+
+/* Hero */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-40%;right:-20%;width:800px;height:800px;background:radial-gradient(circle,rgba(249,115,22,.08) 0%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-30%;left:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(59,130,246,.06) 0%,transparent 70%);pointer-events:none}
+.hero-content{position:relative;z-index:1}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;background:var(--accent-dim);border:1px solid rgba(249,115,22,.25);border-radius:100px;font-size:13px;color:var(--accent);font-weight:500;margin-bottom:32px;letter-spacing:.5px}
+.hero-tag::before{content:'';width:6px;height:6px;background:var(--accent);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-family:'Noto Serif SC',serif;font-size:clamp(36px,5vw,64px);font-weight:900;line-height:1.15;margin-bottom:24px;letter-spacing:-1px}
+.hero h1 .highlight{color:var(--accent);position:relative}
+.hero .subtitle{font-size:18px;color:var(--text2);max-width:700px;line-height:1.8;margin-bottom:40px}
+.hero-meta{display:flex;gap:40px;flex-wrap:wrap}
+.hero-meta-item{display:flex;flex-direction:column;gap:4px}
+.hero-meta-item span:first-child{font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:1.5px;font-weight:500}
+.hero-meta-item span:last-child{font-size:15px;color:var(--text);font-weight:500}
+
+/* Sections */
+section{padding:80px 0;border-top:1px solid var(--border)}
+.section-label{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:var(--accent);text-transform:uppercase;letter-spacing:2px;font-weight:700;margin-bottom:16px}
+.section-label::before{content:'';width:20px;height:2px;background:var(--accent)}
+h2{font-family:'Noto Serif SC',serif;font-size:clamp(28px,3.5vw,42px);font-weight:700;line-height:1.3;margin-bottom:32px;letter-spacing:-.5px}
+h3{font-family:'Noto Serif SC',serif;font-size:22px;font-weight:600;margin-bottom:16px;color:var(--text)}
+h4{font-size:16px;font-weight:700;color:var(--accent);margin-bottom:12px;letter-spacing:.5px}
+p{color:var(--text2);margin-bottom:16px;font-size:15px}
+strong{color:var(--text);font-weight:600}
+
+/* Cards */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px;margin-bottom:24px;transition:border-color .3s}
+.card:hover{border-color:rgba(249,115,22,.3)}
+.card-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;flex-wrap:wrap;gap:12px}
+.card-title{font-family:'Noto Serif SC',serif;font-size:20px;font-weight:700}
+.card-badge{padding:4px 12px;border-radius:100px;font-size:12px;font-weight:600;letter-spacing:.5px}
+.badge-green{background:rgba(34,197,94,.12);color:var(--green);border:1px solid rgba(34,197,94,.25)}
+.badge-orange{background:var(--accent-dim);color:var(--accent);border:1px solid rgba(249,115,22,.25)}
+.badge-blue{background:rgba(59,130,246,.12);color:var(--blue);border:1px solid rgba(59,130,246,.25)}
+.badge-red{background:rgba(239,68,68,.12);color:var(--red);border:1px solid rgba(239,68,68,.25)}
+.badge-purple{background:rgba(168,85,247,.12);color:var(--purple);border:1px solid rgba(168,85,247,.25)}
+
+/* Grid */
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:24px}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+
+/* Stats */
+.stat-row{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0}
+.stat{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:12px 18px;flex:1;min-width:120px}
+.stat-label{font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.stat-value{font-size:18px;font-weight:700;font-family:'JetBrains Mono',monospace}
+.stat-value.green{color:var(--green)}
+.stat-value.orange{color:var(--accent)}
+.stat-value.red{color:var(--red)}
+.stat-value.blue{color:var(--blue)}
+
+/* Table */
+.table-wrap{overflow-x:auto;margin:24px 0;border-radius:12px;border:1px solid var(--border)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead{background:var(--surface2)}
+th{padding:12px 16px;text-align:left;font-weight:600;color:var(--text);font-size:12px;text-transform:uppercase;letter-spacing:.8px;white-space:nowrap;border-bottom:1px solid var(--border)}
+td{padding:10px 16px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:rgba(249,115,22,.03)}
+td:first-child{color:var(--text);font-weight:600;white-space:nowrap}
+.check{color:var(--green)}
+.cross{color:var(--red)}
+
+/* Insight boxes */
+.insight{background:linear-gradient(135deg,rgba(249,115,22,.06),rgba(249,115,22,.02));border:1px solid rgba(249,115,22,.2);border-radius:12px;padding:24px 28px;margin:24px 0}
+.insight-title{font-size:14px;font-weight:700;color:var(--accent);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.insight p{color:var(--text2);margin-bottom:0;font-size:14px}
+.warning{background:linear-gradient(135deg,rgba(239,68,68,.06),rgba(239,68,68,.02));border-color:rgba(239,68,68,.2)}
+.warning .insight-title{color:var(--red)}
+
+/* Progress bars */
+.progress-bar{height:6px;background:var(--surface2);border-radius:3px;overflow:hidden;margin:8px 0}
+.progress-fill{height:100%;border-radius:3px;transition:width .8s ease}
+
+/* Divider */
+.divider{width:60px;height:3px;background:var(--accent);border-radius:2px;margin:32px 0}
+
+/* Timeline */
+.timeline-item{display:flex;gap:20px;margin-bottom:24px;position:relative}
+.timeline-dot{width:12px;height:12px;background:var(--accent);border-radius:50%;margin-top:6px;flex-shrink:0;position:relative;z-index:1}
+.timeline-dot::after{content:'';position:absolute;left:5px;top:12px;width:2px;height:calc(100% + 12px);background:var(--border)}
+.timeline-item:last-child .timeline-dot::after{display:none}
+
+/* Footer */
+footer{padding:40px 0;border-top:1px solid var(--border);text-align:center}
+footer p{color:var(--text3);font-size:13px}
+
+/* TOC */
+.toc{position:sticky;top:20px}
+.toc a{display:block;padding:6px 16px;color:var(--text3);text-decoration:none;font-size:13px;border-left:2px solid var(--border);transition:all .2s}
+.toc a:hover{color:var(--accent);border-left-color:var(--accent)}
+
+/* Responsive */
+@media(max-width:768px){
+.container{padding:0 16px}
+.grid-2,.grid-3{grid-template-columns:1fr}
+.hero-meta{gap:20px}
+section{padding:48px 0}
+.stat-row{gap:8px}
+.stat{min-width:100px;padding:10px 12px}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container hero-content">
+<div class="hero-tag">机密 · 仅供内部决策使用</div>
+<h1>中国商业运载火箭<br>行业<span class="highlight">深度研究报告</span></h1>
+<p class="subtitle">基于对箭元科技、宇石空间、大航跃迁、星际荣耀等公司的实地拜访、高管深度访谈、供应商调研（九州云箭、航宇伺服）及高瓴资本等老股东交流，结合公开信息与独立判断，对行业十大主要玩家进行全方位比较分析。</p>
+<div class="hero-meta">
+<div class="hero-meta-item"><span>出品方</span><span>远景能源 · 战略投资部</span></div>
+<div class="hero-meta-item"><span>日期</span><span>2026年4月1日</span></div>
+<div class="hero-meta-item"><span>版本</span><span>V2.0</span></div>
+<div class="hero-meta-item"><span>密级</span><span>内部机密</span></div>
+</div>
+</div>
+</section>
+
+<!-- EXECUTIVE SUMMARY -->
+<section id="summary">
+<div class="container">
+<div class="section-label">Executive Summary</div>
+<h2>核心判断</h2>
+<div class="grid-3">
+<div class="card">
+<h4>🚀 行业拐点已至</h4>
+<p>2025.12朱雀三号入轨 + 科创板第五套标准落地，行业从"技术验证期"进入"规模化竞争期"。2026年至少8款新型液体火箭密集首飞。</p>
+</div>
+<div class="card">
+<h4>🎯 路线收敛明确</h4>
+<p>"不锈钢 + 液氧甲烷 + 可回收"三位一体成为行业共识。煤油路线公司（天兵、中科宇航）面临中长期转型压力。</p>
+</div>
+<div class="card">
+<h4>📊 终局不是赢家通吃</h4>
+<p>类似新能源汽车格局——各地方政府分封制（浙江→箭元、湖南→宇石、重庆→大航），每年200-300发需求足以支撑3-5家主力公司。</p>
+</div>
+</div>
+
+<div class="insight">
+<div class="insight-title">💡 远景能源的战略机遇</div>
+<p>火箭制造与风电制造存在供应链共通性（塔筒焊接、海工平台、大件运输等），且远景有自研气象大模型 + 气象卫星星座需求（计划2027-2028年发射）。建议"双轮驱动"——<strong>战略投资大航跃迁</strong>（估值安全边际高、产业协同最直接）+ <strong>财务投资箭元科技</strong>（回收验证最深、IPO退出确定性最高），同时持续跟踪宇石空间。</p>
+</div>
+</div>
+</section>
+
+<!-- MARKET -->
+<section id="market">
+<div class="container">
+<div class="section-label">行业背景</div>
+<h2>2.8万颗卫星驱动的确定性市场</h2>
+<div class="grid-2">
+<div>
+<p>星网（~1.3万颗）和垣信/千帆（~1.5万颗）两大星座合计约<strong>2.8万颗卫星</strong>待发射。以星网为例，单颗卫星约650kg，一枚火箭搭载9-10颗，对应约7吨运力需求。</p>
+<p>此外，<strong>联通和移动</strong>也已获卫星牌照，未来将形成四大运营商并存格局。远期太空算力、深空探测等新兴需求将进一步打开市场。</p>
+<div class="stat-row">
+<div class="stat"><div class="stat-label">年运力需求</div><div class="stat-value orange">~584t</div></div>
+<div class="stat"><div class="stat-label">当前年运力</div><div class="stat-value red">225t</div></div>
+<div class="stat"><div class="stat-label">年均缺口</div><div class="stat-value red">~350t</div></div>
+</div>
+</div>
+<div>
+<h4>共识演变三阶段</h4>
+<div class="timeline-item"><div class="timeline-dot"></div><div><strong>2018-2021：固体先行</strong><br><span style="color:var(--text2);font-size:14px">验证"民营能干航天"，所有公司从固体起步</span></div></div>
+<div class="timeline-item"><div class="timeline-dot"></div><div><strong>2022-2024：中大型液体+回收</strong><br><span style="color:var(--text2);font-size:14px">星网/垣信需求明确后，产品收敛至7吨+运力</span></div></div>
+<div class="timeline-item"><div class="timeline-dot"></div><div><strong>2025至今：不锈钢+甲烷+回收</strong><br><span style="color:var(--text2);font-size:14px">朱雀三号验证不锈钢可行，科创板第五套标准引导</span></div></div>
+</div>
+</div>
+<div class="divider"></div>
+<h3>关键认知：三大瓶颈</h3>
+<div class="grid-3">
+<div class="card" style="border-left:3px solid var(--accent)">
+<h4>发动机瓶颈</h4>
+<p>九州云箭累计试车25000s+，蓝箭~30000s。行业公认>10000s才具备上天资格。火箭失利60%与发动机相关，20%与电气相关。九州年产能100台，实际受试车台排期制约。</p>
+</div>
+<div class="card" style="border-left:3px solid var(--blue)">
+<h4>发射场瓶颈</h4>
+<p>国内15个国家级工位以保障国家任务为主，商业航天"见缝插针"。海南商发二期2026年底投运后年发射能力提升至60发+。发射场负责人级别人脉是核心壁垒。</p>
+</div>
+<div class="card" style="border-left:3px solid var(--green)">
+<h4>量产瓶颈</h4>
+<p>铝合金产线年产7-8枚、投资~3亿；<strong>不锈钢产线年产25-30枚、投资仅~5000万</strong>。不锈钢在量产经济性上优势显著，这也是远景供应链（塔筒焊接工艺）可以赋能的领域。</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section id="comparison">
+<div class="container">
+<div class="section-label">竞争格局</div>
+<h2>十大玩家全景对比</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>公司</th><th>梯队</th><th>技术路线</th><th>直径</th><th>运力(LEO)</th><th>发动机</th><th>融资/估值</th><th>首飞</th><th>回收</th><th>IPO</th></tr></thead>
+<tbody>
+<tr><td>蓝箭航天</td><td><span class="badge-green card-badge">T1</span></td><td>不锈钢301+甲烷+着陆腿</td><td>4.5m</td><td>21.3t/18.3t回收</td><td>自研天鹊 30000s</td><td>60亿+ / IPO拟募75亿</td><td class="check">✅ 2025.12</td><td class="cross">❌ 首次失败</td><td>已问询（最快）</td></tr>
+<tr><td>天兵科技</td><td><span class="badge-green card-badge">T1</span></td><td>铝合金+煤油+一次性</td><td>3.8m</td><td>17-22t(宣) / ~6t(实)</td><td>自研天火(煤油)</td><td>60亿+ / ~220亿</td><td>2026 H1</td><td class="cross">❌ 不做回收</td><td>辅导第一期</td></tr>
+<tr><td>星际荣耀</td><td><span class="badge-green card-badge">T1</span></td><td>铝合金+甲烷+海上驳船</td><td>4.2m</td><td>14t/8.5t回收</td><td>自研焦点2 ~3000s</td><td>~80亿 / 投前235亿</td><td>2026 Q4</td><td>计划首飞即回收</td><td>辅导第22期（最慢）</td></tr>
+<tr><td>东方空间</td><td><span class="badge-orange card-badge">T1.5</span></td><td>固体(引力1)+液氧煤油(引力2)</td><td>4.2m</td><td>引力2: 21.5t</td><td>自研原力-110(煤油110t)</td><td>20亿+ / 红杉等</td><td>引力2: 2026 Q2</td><td>一级回收(远期)</td><td>尚未启动(计划2028)</td></tr>
+<tr><td>星河动力</td><td><span class="badge-blue card-badge">T1</span></td><td>煤油 / 3.35m</td><td>3.35m</td><td>~3t</td><td>自研50t煤油</td><td>未披露</td><td>智神星: 2026 H1</td><td>待定</td><td>辅导中</td></tr>
+<tr><td>中科宇航</td><td><span class="badge-blue card-badge">T1</span></td><td>煤油YF-102+助推</td><td>3.35m</td><td>力箭2: 12t</td><td>外采六院YF-102</td><td>未披露</td><td>力箭2: 2026 H1</td><td class="cross">❌ 不可回收</td><td>辅导完成（第二快）</td></tr>
+<tr style="background:rgba(249,115,22,.04)"><td>箭元科技 ⭐</td><td><span class="badge-orange card-badge">T2</span></td><td>不锈钢自研&lt;2mm+甲烷+海上溅落</td><td>4.2m</td><td>14t/7t回收</td><td>九州龙云 25000s</td><td>~25亿 / 投前100亿</td><td>2026 Q4</td><td class="check">✅ 全尺寸验证(唯一)</td><td>530股改 年内辅导</td></tr>
+<tr style="background:rgba(249,115,22,.04)"><td>宇石空间</td><td><span class="badge-orange card-badge">T2</span></td><td>不锈钢304改+甲烷+筷子夹</td><td>4.2m</td><td>7t+回收</td><td>九州龙云 25000s</td><td>~8亿 / 投后35→70亿</td><td>2027.3</td><td class="cross">❌</td><td>尚未启动</td></tr>
+<tr style="background:rgba(249,115,22,.04)"><td>大航跃迁</td><td><span class="badge-orange card-badge">T2</span></td><td>铝合金+甲烷+筷子夹塔架</td><td>4.2m</td><td>7t</td><td>六院液发2.9(国家队) 20000s</td><td>4.35亿 / 投后13亿</td><td>2027 Q2</td><td class="cross">❌</td><td>尚未启动</td></tr>
+<tr><td>深蓝航天</td><td><span class="badge-purple card-badge">T1.5</span></td><td>煤油+海上溅落</td><td>-</td><td>~2t</td><td>-</td><td>-</td><td>2026春节前后</td><td>首飞即回收</td><td>尚未启动</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="insight">
+<div class="insight-title">💡 为什么我们重点关注箭元和宇石？</div>
+<p>在"不锈钢+甲烷+可回收"这一收敛路线上，除蓝箭外，箭元和宇石是最具竞争力的两家二代公司。两家方案高度相似（宇石团队从箭元出走，方案"完全一模一样"），但在进度、回收验证深度、估值性价比上存在差异，值得深入对比。大航跃迁则以国家队资源形成差异化。</p>
+</div>
+</div>
+</section>
+
+<!-- DEEP DIVES -->
+<section id="deepdive">
+<div class="container">
+<div class="section-label">重点公司深度分析</div>
+<h2>二代火箭公司 · 三强对比</h2>
+
+<!-- 箭元 -->
+<div class="card" style="border-left:4px solid var(--accent)">
+<div class="card-header"><div class="card-title">🏆 箭元科技 — 回收验证最深的"后发先至者"</div><span class="badge-green card-badge">工程进度领先</span></div>
+<div class="stat-row">
+<div class="stat"><div class="stat-label">估值(投前)</div><div class="stat-value orange">100亿</div></div>
+<div class="stat"><div class="stat-label">累计融资</div><div class="stat-value">25亿+</div></div>
+<div class="stat"><div class="stat-label">团队</div><div class="stat-value">150人</div></div>
+<div class="stat"><div class="stat-label">BOM成本</div><div class="stat-value">1.1-1.3亿/发</div></div>
+<div class="stat"><div class="stat-label">首飞</div><div class="stat-value orange">2026 Q4</div></div>
+</div>
+<p><strong>核心优势：</strong>①国内唯一完成全尺寸全剖面回收试验（含发动机关机+空中姿态控制+二次点火+着陆）；②不锈钢自研且薄壁<2mm（焊接系数行业最高）；③海上溅落回收运力损耗最小（<10%）；④CEO杨青39年航天经验，技术判断精准；⑤海阳东方航天港合资公司（箭元控股），拥有发射工位优先权；⑥530即将股改，年内辅导，上市路径清晰。</p>
+<p><strong>投资人：</strong>IDG、金沙江、杭州资本（8%+追加）、天问、岭澜。红杉曾接触但最终未进入。</p>
+<p><strong>远景协同点：</strong>箭元在海阳利用钻井平台改造试车/发射台，与远景海工平台能力高度匹配；不锈钢焊接工艺与风电塔筒制造有共通性；CEO明确表达对远景产业链协同的兴趣（供应链+气象载荷）。</p>
+<div class="warning insight" style="margin-top:16px">
+<div class="insight-title">⚠️ 风险关注</div>
+<p>①九州云箭真空版发动机尚未入轨飞行验证；②创始人魏一被宇石方面指责股权兑现问题（需关注团队稳定性）；③与宇石的竞业/知识产权争议可能影响IPO。</p>
+</div>
+</div>
+
+<!-- 宇石 -->
+<div class="card" style="border-left:4px solid var(--blue)">
+<div class="card-header"><div class="card-title">💰 宇石空间 — 融资能力最强的"后起之秀"</div><span class="badge-blue card-badge">资本聚集效应</span></div>
+<div class="stat-row">
+<div class="stat"><div class="stat-label">估值(投后)</div><div class="stat-value blue">70亿</div></div>
+<div class="stat"><div class="stat-label">手持资金</div><div class="stat-value">~8亿</div></div>
+<div class="stat"><div class="stat-label">团队</div><div class="stat-value">~200人</div></div>
+<div class="stat"><div class="stat-label">首飞需资金</div><div class="stat-value">8.7亿</div></div>
+<div class="stat"><div class="stat-label">首飞</div><div class="stat-value blue">2027.3</div></div>
+</div>
+<p><strong>核心优势：</strong>①高瓴、高榕、昆仑、联想系等顶级机构扎堆，资本号召力强；②CEO唐文清华力学博士，对不锈钢+液氧甲烷耦合理解深刻；③不锈钢304改性+个性化后处理形成材料工艺壁垒；④高瓴生态赋能——星箭一体化愿景（太空算力、采矿等孵化）；⑤筷子夹方案符合终局形态。</p>
+<p><strong>核心股东：</strong>基石（7%）、高瓴（4.5%）、云启（6-7%）、高榕、昆仑、联想系、迈威、汇川、紫金矿业。创始人40%。</p>
+<p><strong>需要关注：</strong>①进度比箭元慢半年+（2027.3首飞 vs 箭元2026 Q4）；②不锈钢强度600+MPa vs SpaceX 1500MPa，差了一代；③70亿估值在一子级尚未点火阶段偏高；④箭元方面称"宇石方案和箭元基本一样，完全端过去的"，箭元拜访纪要记录唐文"23年时不在核心团队"。</p>
+</div>
+
+<!-- 大航 -->
+<div class="card" style="border-left:4px solid var(--purple)">
+<div class="card-header"><div class="card-title">🏛️ 大航跃迁 — 国家队资源最深厚的"低调者"</div><span class="badge-purple card-badge">安全边际最高</span></div>
+<div class="stat-row">
+<div class="stat"><div class="stat-label">估值(投后)</div><div class="stat-value purple">13亿</div></div>
+<div class="stat"><div class="stat-label">累计融资</div><div class="stat-value">4.35亿</div></div>
+<div class="stat"><div class="stat-label">下轮估值</div><div class="stat-value purple">投前25亿</div></div>
+<div class="stat"><div class="stat-label">首飞</div><div class="stat-value">2027 Q2</div></div>
+</div>
+<p><strong>核心优势：</strong>①与航天科技集团联合成立发动机研发中心（国内唯一）；②用国家队六院发动机（20000s试车，二代公司中独此一家）；③发射场负责人为西昌/海南前总工程师级别；④创始人陈曙光对行业认知极深（他的竞对分析是我们收集到最精准的版本）；⑤沈荣骏院士（中将）任首席技术顾问；⑥自研150t发动机（面向远期36t运力大航号）。</p>
+<p><strong>估值洼地：</strong>以箭元100亿、宇石70亿为锚，大航13亿投后→25亿投前具有显著安全边际。团队还有50-60%股权，尚未设立董事会。</p>
+<p><strong>远景协同点：</strong>陈曙光明确提出需要产业方帮助——①海工平台用于海上回收（与远景海风平台高度匹配）；②供应链批产结合（泰胜风能是好例子）；③太空算力合作；④海南发射排期协助。</p>
+</div>
+
+<!-- 东方空间 -->
+<div class="card" style="border-left:4px solid var(--cyan)">
+<div class="card-header"><div class="card-title">🌊 东方空间 — 固体标杆，液体追赶中</div><span class="badge-blue card-badge">商业化能力强</span></div>
+<div class="stat-row">
+<div class="stat"><div class="stat-label">融资</div><div class="stat-value">20亿+</div></div>
+<div class="stat"><div class="stat-label">在手订单</div><div class="stat-value green">10亿+</div></div>
+<div class="stat"><div class="stat-label">团队</div><div class="stat-value">300+人</div></div>
+<div class="stat"><div class="stat-label">首飞引力二号</div><div class="stat-value">2026 Q2</div></div>
+</div>
+<p><strong>亮点：</strong>引力一号是全球最大固体火箭，两发连胜，首飞即实现收入+商业冠名——商业化意识在行业中最强。引力二号（液氧煤油、4.2m、LEO 21.5t）自研原力-110发动机（110t推力，对标梅林1D+），已完成全系统试车。唯一同时进入星网和垣信供方名录的民营公司。投资人阵容豪华：红杉、经纬、真格、三一集团、米哈游等。</p>
+<p><strong>关注问题：</strong>①<strong>公司治理风波</strong>——2024年底，联合创始人、联席CEO、清华明星创业者<strong>姚颂被"踢出局"离职</strong>（实控人彭昊旻内部讲话称姚颂"只是个融资负责人"），原CTO布向伟接任董事长兼CEO。两位创始人姚颂和彭昊旻本人均无火箭技术背景（分别是AI芯片和计算生物出身），公司技术能力实际依赖首席科学家彭昆雅（彭昊旻之父，原长征十一号总设计师）。创始团队大换血后投资人普遍观望，新一轮融资迟迟未close；②液氧煤油路线与行业"甲烷+不锈钢"共识渐行渐远，中长期面临转型压力；③发动机刚完成首台整机试车（2025.9），距批产和累计试车要求还有较长距离；④计划2028年上市，但科创板第五套标准要求"可复用入轨"，煤油路线能否满足存疑。</p>
+</div>
+</div>
+</section>
+
+<!-- KEY SUPPLY CHAIN -->
+<section id="supply">
+<div class="container">
+<div class="section-label">供应链关键节点</div>
+<h2>九州云箭：二代火箭公司的"公约数"</h2>
+<div class="grid-2">
+<div>
+<p>九州云箭龙云发动机是二代火箭公司（箭元、宇石）的共同选择，也是国家队长征十二号甲的动力来源之一。</p>
+<div class="stat-row">
+<div class="stat"><div class="stat-label">累计试车</div><div class="stat-value green">25000s+</div></div>
+<div class="stat"><div class="stat-label">年产能</div><div class="stat-value">100台→300台</div></div>
+<div class="stat"><div class="stat-label">单台价格</div><div class="stat-value">~600-700万</div></div>
+<div class="stat"><div class="stat-label">估值</div><div class="stat-value">~100亿</div></div>
+</div>
+<p>龙云发动机核心参数：推力80t（745kN）、变推力40-100%、启动次数3-5次、推重比130-140（目标提升）。地面版已随长12甲入轨飞行10台，海上回收后成功6次启动点火。</p>
+</div>
+<div>
+<h4>为什么不自研发动机？</h4>
+<p>箭元CEO杨青（39年航天经验）的判断：<strong>"公司是火箭公司不是发动机公司。自研周期5年+、投入5亿+，可能错过市场窗口。"</strong> 类比：宁德时代（专注电池）vs 小米（整合资源造车）。</p>
+<p>远期规划：箭元计划4-5年后启动自研200t+发动机；宇石计划自研200t级发动机；大航已自研150t发动机2年。</p>
+<h4 style="margin-top:20px">产能瓶颈的本质</h4>
+<p>大航跃迁陈曙光一针见血：<strong>"一台发动机从点火到下台要一个礼拜，一年52周，理论上限52台。实际上全是手搓出来的，老法师攒出来的，每年也就二三十台。"</strong></p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- INVESTMENT THESIS -->
+<section id="thesis">
+<div class="container">
+<div class="section-label">投资判断</div>
+<h2>远景能源的战略选择</h2>
+
+<div class="card" style="background:linear-gradient(135deg,var(--surface),var(--surface2));border:1px solid rgba(249,115,22,.3)">
+<h3 style="color:var(--accent)">推荐策略："双轮驱动" — 战略投资大航 + 财务投资箭元</h3>
+<div class="grid-2" style="margin-top:20px">
+<div>
+<h4>🏛️ 战略投资：大航跃迁</h4>
+<p>25亿投前估值具有显著安全边际（vs 箭元100亿、宇石70亿），且产业协同最为直接：①海工平台→海上回收平台的技术迁移，与远景海风业务天然匹配；②供应链批产协同（泰胜风能是好例子）；③陈曙光明确提出需要远景帮助海南发射排期、产业链协同和太空算力合作；④铝合金+甲烷路线虽非最终形态，但国家队发动机（20000s）是独特壁垒，首飞确定性高。</p>
+<p><strong>合作模式：</strong>战略投资（较大比例）+ 气象载荷合同 + 海工平台/供应链深度绑定，成为"产业合作伙伴"而非纯财务投资人。</p>
+</div>
+<div>
+<h4>💰 财务投资：箭元科技</h4>
+<p>回收验证深度行业最强（国内唯一全尺寸全剖面），不锈钢自研壁垒深（<2mm，焊接系数行业最高），100亿投前在即将首飞+530股改节点合理，上市路径清晰——IPO退出确定性在二代公司中最高。海阳基地与远景海工能力有协同空间，但主要以财务回报为投资逻辑。</p>
+<p><strong>合作模式：</strong>财务投资（1-2个点）+ 供应链协同探索（焊接工艺、海工平台共享），保持灵活性。</p>
+</div>
+</div>
+<div style="margin-top:20px;padding:16px 20px;background:var(--surface2);border-radius:10px;border-left:3px solid var(--blue)">
+<p style="margin-bottom:0;font-size:14px"><strong>关于宇石空间：</strong>建议持续跟踪但暂不进入。70亿估值在一子级尚未点火阶段偏高，等2026.9一子级9台发动机静态点火里程碑验证后再评估。高瓴生态赋能潜力大，但与远景的直接协同点不如箭元和大航突出。如果远景选择"投一家深度绑定"策略，宇石作为备选。</p>
+</div>
+</div>
+
+<div class="divider"></div>
+<h3>时间窗口正在关闭</h3>
+<p>科创板第五套标准将"可复用入轨"定为上市硬门槛，IPO窗口有时效性。<strong>2027-2028年是星网第二批接单窗口</strong>（蓝箭可能2026年底接第一批），谁能在此前实现"入轨+回收验证"，谁就能进入星网白名单。市场给二代火箭公司的容错率极低——必须"第一次就做对"。</p>
+
+<div class="warning insight">
+<div class="insight-title">⚠️ 风险提示</div>
+<p>①可回收技术仍处早期（蓝箭和长12甲回收均未成功）；②发射审批趋严（天兵事故后）；③星网/垣信进度可能低于预期（宇石认为2028年前不太可能大规模发射）；④国家队长征十二甲/十号加速挤压民营空间；⑤火箭发射本质高风险，单次失败可能对公司融资和IPO产生重大影响。</p>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<p>本报告基于公司拜访、高管访谈、供应链调研及公开信息编写，所有信息截至2026年4月1日。</p>
+<p style="margin-top:8px">远景能源 · 战略投资部 · 机密文件 · 未经授权禁止传播</p>
+</div>
+</footer>
+
+</body>
+</html>
